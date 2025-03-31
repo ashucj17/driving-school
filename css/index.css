@@ -1,0 +1,17 @@
+section{
+    padding: 12rem auto;
+    overflow-x: hidden;
+}
+
+.section__header{
+    text-align: center;
+}
+
+.section__header h4{
+    color: var(--color-primary);
+    margin-bottom: 05rem;
+}
+
+
+
+/* ====================== Hero ====================== */
