@@ -173,3 +173,69 @@ margin-bottom: 1rem;
     background: var(--color-gray-900);
     color: var(--color-gray-0);
 }
+
+
+/* ====================== why us ====================== */
+
+.whyUs__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.whyUs__left h4{
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.whyUs__left p{
+    margin: 0.5rem 0 2.5rem;
+}
+
+
+.whyUs__right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.whyUs__item{
+    background: var(--color-gray-0);
+    padding: 2rem;
+    border-radius: var(--radius-6);
+    text-align: center;
+    box-shadow: 0 1rem 0 var(--color-gray-100);
+    transition: var(--transition);
+}
+
+.whyUs__item:hover{
+    box-shadow: none;
+}
+
+.whyUs__item span{
+    background: var(--color-primary);
+    width: 4rem;
+    aspect-ratio: 1/1;
+    border-radius: 1.5rem;
+    color: var(--color-gray-0);
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+    margin-inline: auto;
+}
+
+.whyUs__item:nth-child(2) span{
+    background: var(--color-danger);
+}
+
+.whyUs__item:nth-child(3) span{
+    background: var(--color-success);
+}
+
+.whyUs__item:nth-child(4) span{
+    background: var(--color-gray-700);
+}
+
+.whyUs__item h4{
+    margin: 2rem 0  0.6rem;
+}

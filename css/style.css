@@ -6,7 +6,7 @@
 :root{
     --color-primary: #08799e;
     --color-variant: #f9f221;
-    --color-gray-0: #d1cccb;
+    --color-gray-0: #e3e8e9;
     --color-gray-50: #d6e1e6;
     --color-gray-100: #c9cfd1;
     --color-gray-200: #a0b2b9;
@@ -49,6 +49,10 @@
     text-decoration: none;
     user-select: none;
 
+}
+
+html{
+    font-size: 14px;
 }
 
 body{
@@ -139,7 +143,7 @@ button{
 /* ------------------------- Navbar ---------------------------- */
 
 nav{
-    background: var(--color-gray-100);
+    background: var(--color-primary);
     box-shadow: 0 0.5rem 0 rgba(0 , 0, 0, 0.1);
     min-width: 100vw;
     height: 5rem;
@@ -188,7 +192,7 @@ width: 6rem;
 }
 
 nav a:hover{
-    color: var(--color-variant);
+    color: var(--color-gray-200);
 }
 
 nav a:active{
@@ -201,5 +205,5 @@ nav a:active{
 }
 
 .theme__btn:hover{
-    color: var(--color-variant);
+    color: var(--color-gray-200);
 }
