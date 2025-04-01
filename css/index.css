@@ -1,5 +1,5 @@
 section{
-    padding: 12rem auto;
+    padding: 12rem 0;
     overflow-x: hidden;
 }
 
@@ -9,9 +9,110 @@ section{
 
 .section__header h4{
     color: var(--color-primary);
-    margin-bottom: 05rem;
+    margin-bottom: 0.5rem;
 }
 
 
 
 /* ====================== Hero ====================== */
+
+.hero{
+    min-height: 100vh;
+    background: linear-gradient(var(--color-gray-0),var(--color-gray-100));
+}
+
+body .dark .hero{
+    background: linear-gradient(var(--color*gray-200),var(--color-gray-0));
+}
+
+.hero__container{
+    text-align: center;
+}
+
+.hero__content{
+    width:50%;
+    margin-inline: auto
+}
+
+.hero__cont4ent p{
+    margin-top: 0.5rem;
+}
+
+.hero__cta{
+    margin-top: 4rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__images{
+    width: fit-content;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4rem;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.hero__image{
+    width: 14rem;
+    height: 25rem;
+    border-radius: 7rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 0 var(--color-gray-200);
+}
+
+.hero__image:hover{
+    box-shadow: none;
+}
+
+.hero__image:nth-child(1),
+.hero__image:nth-child(5){
+    transform: translateY(-8rem);
+}
+
+.hero__image:nth-child(3){
+    transform: translateY(8rem);
+}
+
+
+/* ====================== About ====================== */
+
+.about{
+    background: var(--color-gray-50);
+}
+
+.about__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+}
+
+.about__left{
+    border-radius: 7rem;
+    overflow: hidden;
+    box-shadow: 0 2rem 0 var(--color-gray-100); transition: var(--transition);
+}
+
+.about__left:hover{
+    box-shadow: none;
+}
+
+.section__header{
+    text-align: left;
+}
+
+
+.about__container h1{
+    margin-bottom: 1rem;
+}
+
+.about__right{
+margin-bottom: 1rem;
+}
+
+.about__container a{
+    margin-top: 2rem;
+}
