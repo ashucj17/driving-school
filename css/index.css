@@ -301,3 +301,68 @@ margin-bottom: 1rem;
     place-items: center;
     box-shadow: 0 0.5rem 0 var(--color-gray-100);
 }
+
+
+
+/* ====================== Our Packages ====================== */
+
+
+.packages__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: max-content;
+    margin: 4rem auto 2rem;
+}
+
+.packages__buttons button{
+    background: var(--color-gray-0);
+    color: var(--color-gray-900);
+    border-radius: var(--radius-3);
+    padding: 1.5rem 3rem;
+    box-shadow: 0 0.7rem 0 var(--color-gray-100);
+}
+
+.packages__buttons button.active{
+    background: var(--color-primary);
+    color: var(--color-gray-0);
+}
+
+.packages__buttons button:hover{
+    background: var(--color-gray-900);
+    color: var(--color-gray-0);
+    box-shadow: none;
+}
+
+table{
+    width: 100%;
+}
+
+thead th{
+    padding: 1rem;
+    text-align: left;
+}
+
+tbody td{
+    padding: 1rem;
+}
+
+tbody tr{
+    animation: identifier 1s ease forwards;
+}
+
+tbody tr:nth-child(odd){
+    background: var(--color-gray-0);
+}
+
+/* Animation for packahes toggle/change */
+
+@keyframes identifier {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
