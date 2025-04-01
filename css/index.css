@@ -239,3 +239,65 @@ margin-bottom: 1rem;
 .whyUs__item h4{
     margin: 2rem 0  0.6rem;
 }
+
+
+/* ====================== Our Process ====================== */
+
+.ourProcess{
+    background: var(--color-gray-0);
+    text-align: center;
+}
+
+.ourProcess__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 7rem;
+}
+
+.ourProcess__item{
+    background: var(--color-gray-700);
+    color: var(--color-gray-100);
+    padding: 3rem 2rem;
+    border-radius: var(--radius-6);
+    box-shadow: 0 1rem 0 var(--color-gray-100);
+    position: relative;
+    transition: var(--transition);
+}
+
+.ourProcess__item:hover{
+    box-shadow: none;
+}
+
+
+.ourProcess__item:nth-child(1){
+    background: var(--color-success);
+}
+
+.ourProcess__item:nth-child(2){
+    background: var(--color-danger);
+}
+
+.ourProcess__item h4{
+    color: var(--color-gray-0);
+    margin: 2rem 0 0.5rem;
+}
+
+.ourProcess__item span{
+    font-size: 2.5rem;
+    color: var(--color-gray-0);
+    display: inline-block;
+}
+
+.ourProcess__item h2{
+    position: absolute;
+    top: -2rem;
+    left: 5rem;
+    background: var(--color-gray-0);
+    width: 4.5rem;
+    aspect-ratio: 1/1;
+    border-radius: var(--radius-4);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0.5rem 0 var(--color-gray-100);
+}
