@@ -41,7 +41,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     border: 0;
     background: transparent;
     outline: 0;
@@ -207,3 +207,53 @@ nav a:active{
 .theme__btn:hover{
     color: var(--color-gray-200);
 }
+
+
+
+/* ------------------------- Footer ---------------------------- */
+
+footer{
+    border-top: 0.5rem solid var(--color-gray-0);
+}
+
+footer *{
+    color: var(--color-gray-900);
+}
+
+.footer__container{
+    padding: 5rem 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__menu, .footer__socials{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.footer__socials a{
+    background: var(--color-gray-0);
+    height: 3rem;
+    aspect-ratio: 1/1;
+    border-radius: var(--radius-3);
+    display: grid;
+    place-items: center;
+}
+
+.footer__soclials a i{
+    font-size: 1.2rem;
+    color: var(--color-gray-900);
+}
+
+.footer__copyright{
+    text-align: center;
+    display: block;
+    padding: 1.5rem;
+    border-top: 4px solid var(--color-gray-300);
+}
+
+
+
+/* ------------------------- Media Queries for small screens ---------------------------- */

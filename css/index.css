@@ -407,5 +407,12 @@ tbody tr:nth-child(odd){
     overflow: hidden;
 }
 
+.swiper-pagination-billet{
+    background: var(--color-gray-900);
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--color-primary);
+}
 
 
