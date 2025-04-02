@@ -14,6 +14,8 @@
   <!-- fav icon -->
   <link rel="icon" type="image/png" href="../images/Automaniac_favicon.png">
 
+  <!-- SwiperJs -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- Common Style -->
   <link rel="stylesheet" href="../css/style.css">
@@ -276,8 +278,109 @@
   </div>
 </section>
 
+<!-- ========================= Our Packages ========================== -->
+
+<section class="testimonials">
+  <div class="container swiper mySwiper">
+    <header class="section__header">
+      <h4>They Advocate for Us</h4>
+      <h2>Testimonials</h2>
+    </header>
+    <menu class="swiper-wrapper">
+      <article class="swiper-slide">
+        <p>This is the best driving school, according to my friend, who suggested it to me. He was absolutely correct! There is no better school for learning to drive than this one.</p>
+        <div class="testimonial__client">
+          <div class="testimonial__client-image">
+            <img src="../images/Student1.jpg" alt="student">
+          </div>
+          <div class="testimonial__client-info">
+          <h5>Riya Singh</h5>
+          <small>Web developer</small>
+        </div>
+        </div>
+      </article>
+      <article class="swiper-slide">
+        <p>My school's highly qualified trainers have helped me become a more responsible and secure driver. It is without a doubt India's top driving school.</p>
+        <div class="testimonial__client">
+          <div class="testimonial__client-image">
+            <img src="../images/Student2.jpg" alt="student">
+          </div>
+          <div class="testimonial__client-info">
+          <h5>Swati Sharma</h5>
+          <small>School Teacher</small>
+        </div>
+        </div>
+      </article>
+      <article class="swiper-slide">
+        <p>The Maruti Suzuki Driving School's cutting-edge curriculum and skilled instructors make learning an exciting and captivating experience. I appreciate you helping me become a proficient driver.</p>
+        <div class="testimonial__client">
+          <div class="testimonial__client-image">
+            <img src="../images/student3.jpeg" alt="student">
+          </div>
+          <div class="testimonial__client-info">
+          <h5>Annant Pandey</h5>
+          <small>Doctor</small>
+        </div>
+        </div>
+      </article>
+      <article class="swiper-slide">
+        <p>This school's cutting-edge curriculum and excellent training make learning a highly captivating and fascinating experience. I appreciate you helping me become a proficient driver.</p>
+        <div class="testimonial__client">
+          <div class="testimonial__client-image">
+            <img src="../images/student4.jpeg" alt="student">
+          </div>
+          <div class="testimonial__client-info">
+          <h5>Anjali Dixit</h5>
+          <small>Frontend Developer</small>
+        </div>
+        </div>
+      </article>
+      <article class="swiper-slide">
+        <p>We are really grateful to Driving School for supplying the female trainers. I now drive with confidence and proudly display my driver's license!</p>
+        <div class="testimonial__client">
+          <div class="testimonial__client-image">
+            <img src="../images/student5.png" alt="student">
+          </div>
+          <div class="testimonial__client-info">
+          <h5>Annaya Singh</h5>
+          <small>Teacher</small>
+        </div>
+        </div>
+      </article>
+    </menu>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 
 
 
+<!-- ========================= Our Packages ========================== -->
+
+
+
+
+
+
+
+
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true
+     },
+     slidesPerView: 1,
+     spaceBetween: 50,
+     breakpoints:{
+      599:{
+            slidesPerView: 3,
+      }
+     }
+   });
+ </script>
 </body>
 </html>

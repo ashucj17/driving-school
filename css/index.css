@@ -366,3 +366,46 @@ tbody tr:nth-child(odd){
         opacity: 1;
     }
 }
+
+
+
+/* ====================== Testimonial ====================== */
+
+
+.testimonials{
+    background: var(--color-gray-0);
+}
+
+.swiper-wrapper{
+    margin-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.swiper-slide{
+    background: var(--color-gray-50);
+    padding: 2rem 2.5rem;
+    border-radius: var(--radius-6);
+    box-shadow: 0 1.2rem 0 var(--color-gray-100);
+    transition: var(--transition);
+}
+
+.swiper-slide:hover{
+    box-shadow: none;
+}
+
+.testimonial__client{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.testimonial__client-image{
+    width: 4rem;
+    aspect-ratio: 1/1;
+    border-radius: var(--radius-3);
+    overflow: hidden;
+}
+
+
+
