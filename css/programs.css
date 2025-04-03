@@ -1,0 +1,64 @@
+.page__header{
+    background: url(../images/school3.jpg);
+}
+
+.program{
+    margin: 4rem 0;
+}
+
+.programs__menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4rem;
+    gap: 1.5rem;
+}
+
+.program {
+    background: var(--color-gray-0);
+    display: flex;
+    text-align: left;
+    color: var(--color-gray-700);
+    border-radius: var(--radius-4);
+    overflow: hidden;
+}
+
+.program.active{
+    background: var(--color-gray-900);
+    box-shadow: 0 0.7rem 0 var(--color-primary);
+}
+
+.program.active *{
+    color: var(--color-gray-0);
+}
+
+.program__image{
+    height: 100%;
+    width: 12rem;
+}
+
+.program__info  {
+    padding: 1rem;
+}
+
+.program__info h4{
+    color: var(--color-primary);
+}
+
+.program__info p{
+    font-size: 0.85rem;
+    margin: 0.8rem 0 1.3rem;
+}
+
+.program__info small {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.program:hover small{
+    letter-spacing: 2px;
+}
+
+
+/* ------------------------- Media Queries for small screens ---------------------------- */
