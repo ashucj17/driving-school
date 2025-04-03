@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Fontawesome cdn -->
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <title>Automaniac Driving School</title>
+
+
+  <!-- fav icon -->
+  <link rel="icon" type="image/png" href="../images/Automaniac_favicon.png">
+
+  <!-- SwiperJs -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Common Style -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Specific css -->
+  <link rel="stylesheet" href="../css/faq.css">
+
+
+
+
+
+</head>
+<body>
+  <nav>
+    <div class="container nav__container">
+        <a href="../pages/index.html" class="nav__logo"><img src="../images/Automaniac_Logo.png" alt="Site logo"></a>
+        <div class="nav__content">
+          <menu class="nav__menu">
+            <a href="../pages/index.html">Home</a>
+            <a href="../pages/about.html">About Us</a>
+            <a href="../pages/gallery.html" >Gallery</a>
+            <a href="../pages/programs.html">Our Programs</a>
+            <a href="../pages/faq.html" class="active">FAQs</a>
+            <a href="../pages/contact.html">Contact Us</a>
+          </menu>
+          <button class="theme__btn"><i class="fa-solid fa-moon"></i></button>
+          <button class="nav__menu-open"><i class="fa-solid fa-bars"></i></button>
+          <button class="nav__menu-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+      </nav>
+
+
+
+<!-- ========================= Header ========================== -->
+
+
+<header class="page__header">
+    <div class="page__header-content">
+        <h2>Frequently Asked Questions</h2>
+        <p>We think that driving is becoming a need rather than a luxury. The best facilities are available at Automaniac Driving School to enable its pupils to learn to drive as smoothly as possible. To guarantee that you become a skilled driver, Automaniac Driving School offers a combination of theory, simulator, and practical training.</p>
+    </div>
+</header>
+
+
+<!-- ========================= FAQs ========================== -->
+
+<menu class="container faqs">
+    <article class="faq">
+        <div class="faq__head">
+            <h5>How can i find Automaniac driving school near me?</h5>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <p>Go to the website's "School Locator" page to locate an Automaniac Driving School in your area. At the bottom of the page is a list of the best driving schools in India; alternatively, you may search by city to choose the one that's closest to you.</p>
+    </article>
+    <article class="faq">
+        <div class="faq__head">
+            <h5>What cna a student expect at Automainac driving school?</h5>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <p>Students who sign up for Automaniac Driving School courses will receive instruction from knowledgeable instructors who use cutting-edge technology to provide hands-on driving instruction.</p>
+    </article>
+    <article class="faq">
+        <div class="faq__head">
+            <h5>How many Automainac driving school in India?</h5>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <p>We currently operate a network of over 40 automobile driving schools throughout India. encompassing every significant city.</p>
+    </article>
+    <article class="faq">
+        <div class="faq__head">
+            <h5>Is there any age restriction for driving at Automainac school?</h5>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <p>Indeed. According to government regulations, applicants must be at least eighteen years old in order to join in a course at the Automainac Driving School.</p>
+    </article>
+    <article class="faq">
+        <div class="faq__head">
+            <h5>Is there a course for someone ho is extremely new to driving?</h5>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <p>Yes, both novice and seasoned drivers can benefit from our classes. Three learner courses are available that give you practical driving practice while enhancing your knowledge and comprehension of fundamental traffic laws. Our "Course Recommendation Engine" allows you to find the course that is most appropriate for you.</p>
+    </article>
+    <article class="faq">
+        <div class="faq__head">
+            <h5>What is the learning course fee at Automainiac driving school?</h5>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <p>The cost of automobile driving instruction will vary depending on the course you want to take because Automaniac Driving School offers a variety of driving courses.</p>
+    </article>
+
+    <a href="mailto:youremail@gmail.com" class="btn primary" target="_blank">Have more questions!</a>
+</menu>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========================= Footer ========================== -->
+
+
+<footer>
+    <div class="container footer__container">
+      <menu class="footer__menu">
+        <a href="#">Privacy</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Other Interest</a>
+      </menu>
+      <menu class="footer__socials">
+        <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      </menu>
+  
+    </div>
+    <small class="footer__copyright">
+      &copy; 2025 Automaniac Driving School. All Rights Reserved
+    </small>
+  </footer>
+
+<!-- ========================= FAQ toggle script ========================== -->
+
+<script>
+    const faqs = document.querySelectorAll('.faq');
+    faqs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('show')
+            if(faq.classList.contains('show')){
+                faq.querySelector('i').className = 'fa-solid fa-angle-up'
+            } else {
+                faq.querySelector('i').className = 'fa-solid fa-angle-down'
+            }
+        })
+    } )
+</script>
+
+
+
+<script src="../pages/app.js"></script>
+    </body>
+</html>
