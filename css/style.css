@@ -210,6 +210,48 @@ nav a:active{
 
 
 
+
+/* ------------------------- Page Header ---------------------------- */
+
+.page__header{
+    height: 15rem;
+    background: url(../images/Training.jpg) center center/cover;
+    display: grid;
+    place-items: center;
+    margin: 4rem 0;
+    position: relative;
+}
+
+.page__header::before{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: #030f1b;
+    opacity: 0.75;
+}
+
+.page__header-content{
+    width: 50%;
+    text-align: center;
+    z-index: 1;
+}
+
+.page__header-content *{
+    color: #fff;
+}
+
+.page__header-content h2{
+    margin-bottom: 0.7rem;
+}
+
+
+
+
+
 /* ------------------------- Footer ---------------------------- */
 
 footer{
@@ -329,6 +371,13 @@ footer *{
         animation-delay: 1000ms;
     }
 
+    .page__header{
+        height: 20rem;
+    }
+
+    .page__header-content{
+        width: var(--container-w-md);
+    }
 
 
     @keyframes animation1 {
@@ -346,6 +395,9 @@ footer *{
     .nav__menu-open{
         display: inline-block;
     }
+
+
+    
 
 
     .footer__container{
