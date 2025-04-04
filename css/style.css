@@ -6,7 +6,7 @@
 :root{
     --color-primary: #08799e;
     --color-variant: #f9f221;
-    --color-gray-0: #e3e8e9;
+    --color-gray-0: #f3f6f7;
     --color-gray-50: #d6e1e6;
     --color-gray-100: #c9cfd1;
     --color-gray-200: #a0b2b9;
@@ -51,9 +51,9 @@
 
 }
 
-/* html{
+html{
     font-size: 14px;
-} */
+}
 
 body{
     font-family: "Poppins", sans-serif;
@@ -62,6 +62,21 @@ body{
     background: var(--color-gray-50);
     font-weight: 500;
 }
+
+.dark{
+    --color-gray-0: #080b0c;
+    --color-gray-50: #182023;
+    --color-gray-100: #2a3439;
+    --color-gray-200: #33414f;
+    --color-gray-300: #576471;
+    --color-gray-400: #707d8b;
+    --color-gray-500: #8e9cac;
+    --color-gray-600: #a6acb1;
+    --color-gray-700: #c8ccd2;
+    --color-gray-800: #e7e6ed;
+    --color-gray-900: #f9fbfc;
+}
+
 
 .container{
     width: var(--container-w-lg);
@@ -192,10 +207,10 @@ width: 6rem;
 }
 
 nav a:hover{
-    color: var(--color-gray-200);
+    color: var(--color-variant);
 }
 
-nav a:active{
+nav a.active{
     color: var(--color-variant);
 }
 
@@ -205,7 +220,7 @@ nav a:active{
 }
 
 .theme__btn:hover{
-    color: var(--color-gray-200);
+    color: var(--color-variant);
 }
 
 

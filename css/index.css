@@ -51,14 +51,14 @@ body .dark .hero{
     margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 4rem;
+    gap: 5rem;
     justify-content: space-between;
     margin-top: 5rem;
 }
 
 .hero__image{
     height: 25rem;
-    border-radius: 7rem;
+    border-radius: 8rem;
     overflow: hidden;
     box-shadow: 0 1.5rem 0 var(--color-gray-200);
 }

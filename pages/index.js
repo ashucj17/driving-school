@@ -1,4 +1,7 @@
 
+
+
+//   Swiper JS
 var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
@@ -13,6 +16,10 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
+
+  //  Animate on scroll
+
+  AOS.init();
 
 
 // ============================ Package Toggle ============================

@@ -21,10 +21,11 @@
   <link rel="stylesheet" href="../css/style.css">
 
   <!-- Specific css -->
-
-
+  
   <link rel="stylesheet" href="../css/index.css">
-
+  
+  <!-- Animate on scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
@@ -56,7 +57,7 @@
 
 <section class="hero">
   <div class="container hero__container">
-    <article class="hero__content">
+    <article class="hero__content" data-aos="fade-in" data-aos-duration ="1500" data-aos-delay="500">
       <h1>Your one-stop <br> destination for driving lessons</h1>
       <p>Our painstakingly created courses assist in converting novice drivers into competent and self-assured ones. Master the art of driving by selecting your preferred course from a variety of driving instruction programs</p>
       <div class="hero__cta">
@@ -64,7 +65,7 @@
         <a href="../pages/programs.html" class="btn ">See Our Programs</a>
       </div>
     </article>
-    <article class="hero__images">
+    <article class="hero__images" data-aos="fade-up" data-aos-duration ="1500" data-aos-delay="1200">
       <div class="hero__image">
         <img src="../images/Driving_Instructor.jpg" alt="Driving school image">
       </div>
@@ -380,9 +381,12 @@
 
 
 
- <!-- Swiper JS -->
- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+
+<!-- AOS  -->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
  <script src="../pages/app.js"></script>
  <script src="../pages/index.js"></script>
