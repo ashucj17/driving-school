@@ -2,7 +2,7 @@
     background: url(../images/school3.jpg);
 }
 
-.program{
+.programs{
     margin: 4rem 0;
 }
 
@@ -61,4 +61,101 @@
 }
 
 
+.programDetail{
+    margin-bottom: 6rem;
+}
+
+.programDetail__container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 3rem;
+    animation: identifier 2s ease forwards;
+}
+
+@keyframes identifier {
+    0%{
+        opacity: 0;
+    } 100%{
+        opacity: 1;
+    }
+}
+
+.programDetail__left > p {
+    margin: 0.5rem 0 2rem;
+}
+
+.programDetail__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.programDetail__images div{
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.programDetail__left article{
+    background: var(--color-gray-0);
+    border-radius: var(--radius-4);
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.programDetail__left h5 {
+    margin-bottom: 0.6rem;
+}
+
+
+.programDetail__right{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: fit-content;
+}
+
+.programDetail__right article{
+    background: var(--color-gray-0);
+    padding: 1.5rem;
+    border-radius: var(--radius-5);
+}
+
+.programDetail__right h4 {
+    color: var(--color-primary);
+}
+
+.programDetail__right h2 {
+    font-weight: 600;
+}
+
+.programDetail__right div{
+    margin-top: 1.5rem;
+}
+
+.programDetail__right article p{
+    margin-top: 0.5rem;
+}
+
+
+
 /* ------------------------- Media Queries for small screens ---------------------------- */
+
+
+@media screen and (max-width: 600px) {
+
+    .programs__menu{
+        grid-template-columns: 1fr;
+        margin: 1rem;
+    }
+
+    .programDetail__container{
+        grid-template-columns: 1fr;
+    }
+    
+    .programDetail__images {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+}
